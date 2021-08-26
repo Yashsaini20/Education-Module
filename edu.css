@@ -1,0 +1,309 @@
+/*
+font-family: 'Montserrat', sans-serif;
+*/
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    color:black;
+
+}
+p{
+    font-size:14px;
+    line-height: 1.75;
+    font-weight: 500;
+}
+h1{
+    font-size:32px !important;
+}
+
+
+.header{
+    padding:0;
+}
+.top{
+    background-image:linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.986),40%,
+        rgba(255, 255, 255, 0)),url("chalks.jpg");
+    height: 70vh;
+    background-position: 60%;
+    background-size: cover;
+   
+}
+
+.back-color{
+    background-color: #343a40;
+    padding: 0 5px;
+    display: inline-block;
+    color:white;
+}
+
+.heading{
+    position: absolute;
+    color:rgb(255, 252, 47);
+   font-size:50px !important;
+   font-weight: bold;
+   letter-spacing: 2px;
+    top:40%;
+   
+    margin:0;
+  margin-left:6%;
+    transform:translateY(-50%);
+}
+.quote{
+    position: absolute;
+    color:white;
+
+  font-weight:bold;
+
+    top:65%;
+   
+    margin:0;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+
+.row{
+    margin:0;
+ display: flex;
+    font-size:120%;
+
+}
+.inno-sub{
+    padding:80px 65px 10px 65px;
+}
+
+.last-sec{
+    padding-top:80px; 
+  }
+.sub-section-head{
+margin-bottom:30px;
+
+}
+.sub-head{
+    font-weight: bold;
+
+    border-left: rgb(230, 255, 89) 5px solid;
+   
+}
+.intro-sec{
+    margin-top:30px;
+   
+    
+}
+
+
+.right-head{
+    float:right;
+   
+    border-left:none;
+    text-align: right;
+    border-right:rgb(255, 251, 28) 5px solid;
+
+}
+.right-intro{
+    display:inline-block;
+}
+
+
+
+.color_yellow{
+    color:#f8cc2c;
+}
+.color_white{
+    color:rgb(255, 255, 255);
+}
+
+.color_gray{
+ 
+   background-color:#343a40;
+}
+
+
+
+
+.change_back{
+  
+    background-color: #fed136;
+}
+.flex{
+    display:flex;
+    padding:0;
+    background-color:#343a40;
+ 
+    z-index:-2;
+}
+#hover,#hover2{
+    transition:0.2s all;
+    z-index: 10;
+    color:rgb(255, 255, 255);
+}
+.last-intro{
+    padding:10px 30px;
+}
+#highlight,#highlight-2{
+    padding:10px 0;
+}
+.jnv{
+    background-color:#343a40;
+    display:flex;
+    color:white;
+    padding-top:0;
+    clip-path: polygon(8% 0,97% 0,92% 100%,3% 100%);
+    padding-bottom: 0;
+}
+
+
+
+.modal-head{
+    background-color: #fed136;
+    border-radius:4px;
+}
+
+.modal-button:hover{
+    background-color: #fed136;
+    transition:0.4s;
+}
+.centered-modal{
+    top:50%;
+    transform:translateY(-50%) !important;
+}
+
+.green_color{
+    background-color: #90ee90;
+}
+.col-sm-12.py-5.px-4 {
+    background-color: #d3d3d3;
+}
+
+/*media queries*/
+
+@media(max-width:900px){
+    .jnv{
+      clip-path:polygon(0% 0,100% 0,100% 100%,0 100%);
+    }
+
+    .top{
+      
+        text-align:center;
+        
+    }
+    .quote{
+        top:75%;
+    }
+    .heading{
+        top:40%;
+   
+     
+        transform:translate(-50%,-50%);
+        margin-left:0;
+        left:50%;
+      
+        
+    }
+
+}
+
+
+
+
+@media(max-width:768px){
+      .display{
+        display: inline-flex;
+    }
+    .width{
+        width:50%;
+    }
+   
+    .change_back{
+        display: none;
+    }
+#hover,#hover-2{
+    width:100%;
+}
+
+.inno-sub{
+    padding:80px 30px 0px 30px;
+}
+
+.quote{
+    display: table;
+}
+.last-sec{
+    text-align: center;
+padding-top:80px;
+}
+.sub-head{
+    font-size:30px !important;
+}
+.collab{
+    font-size: 30px !important;
+}
+h2{
+    font-size:25px !important;
+}
+.flex{
+    pointer-events: none;
+}
+#highlight{
+    background-color:#fed136;
+}
+#highlight-2{
+    background-color:#fed136 !important;
+}
+}
+
+@media(max-width:380px){
+
+
+   
+    .last-intro{
+        padding:0;
+    }
+
+
+.inno-sub{
+    padding:20px 10px;
+}
+ 
+.last-sec{
+    padding:20px 0;
+
+}
+
+.quote{
+    font-weight: unset;
+    font-size:1.1rem;
+}
+hr{
+    width:50px;
+}
+.col-sm-6{
+    padding-right: 0;
+    padding-left: 0;
+}
+h2{
+    font-size:19px !important;
+}
+p{
+    font-size: 0.8rem;
+    font-weight: unset;
+}
+.collab{
+    font-size: 21px !important;
+    font-weight: unset;
+}
+.sub-head{
+    font-size:21px !important;
+    font-weight: unset;
+}
+.heading{
+    letter-spacing: 0;
+    font-size: 42px !important;
+}
+
+}
